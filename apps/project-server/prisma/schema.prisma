@@ -9,6 +9,8 @@ generator client {
 
 model Customer {
   createdAt DateTime @default(now())
+  email     String?
   id        String   @id @default(cuid())
+  name      String?
   updatedAt DateTime @updatedAt
 }
